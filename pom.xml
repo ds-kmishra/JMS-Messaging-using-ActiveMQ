@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.activemq</groupId>
+  <artifactId>com.activemq.jms</artifactId>
+  <version>1.0</version>
+  <packaging>jar</packaging>
+
+  <name>My JMS Application</name>
+  <url>http://maven.apache.org</url>
+
+  <parent>
+    <groupId>org.actframework</groupId>
+    <artifactId>act-starter-parent</artifactId>
+    <version>1.9.2.0</version>
+  </parent>
+
+  <properties>
+    <app.entry>com.activemq.AppEntry</app.entry>
+    <version.slf4j-api>1.7.7</version.slf4j-api>
+    <version.logback-classic>1.1.7</version.logback-classic>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/javax.jms/javax.jms-api -->
+    <dependency>
+      <groupId>javax.jms</groupId>
+      <artifactId>javax.jms-api</artifactId>
+      <version>2.0.1</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>${version.slf4j-api}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>${version.logback-classic}</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.apache.activemq/activemq-all -->
+    <dependency>
+      <groupId>org.apache.activemq</groupId>
+      <artifactId>activemq-all</artifactId>
+      <version>5.15.8</version>
+    </dependency>
+  </dependencies>
+
+</project>
